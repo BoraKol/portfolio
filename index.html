@@ -3,220 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bora Kol | Generative AI & LLM Developer</title>
+    <title>Bora Kol | AI Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Modern, Mimari Fontlar: Manrope (Başlıklar) ve Inter (Metinler) -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;800&family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">BORA KOL<span>.AI</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Expertise</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Journey</a></li>
-            <li><a href="#contact" class="btn-contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <span class="greeting">Hello, I'm Bora</span>
-            <h1>Generative AI & <br> LLM Developer</h1>
-            
-            <div class="typewriter">
-                <span class="text-static">Focusing on: </span>
-                <span class="text-dynamic">Python, RAG & Agents</span>
-            </div>
-
-            <p class="bio-text">
-                I am a recent Computer Engineering graduate with a strong passion for research and development in the fields of Artificial Intelligence and Large Language Model based applications. My goal is to contribute to innovative solutions by combining theoretical knowledge with practical experience.
-            </p>
-
-            <div class="social-icons">
-                <a href="https://github.com/BoraKol" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/borakol/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://huggingface.co/borakol" target="_blank" title="Hugging Face">🤗</a>
-                <a href="https://www.kaggle.com/borakol1" target="_blank" title="Kaggle"><i class="fab fa-kaggle"></i></a>
-            </div>
-            
-            <div class="location-info" style="margin-top: 20px; color: var(--text-muted); font-size: 0.9rem;">
-                <i class="fas fa-map-marker-alt"></i> Antalya, Türkiye
-            </div>
-        </div>
+    <div class="main-wrapper">
         
-        <div class="hero-glow"></div>
-    </section>
+        <!-- HEADER -->
+        <header>
+            <div class="logo">Bora Kol</div>
+            <nav>
+                <a href="#projects">Work</a>
+                <a href="#about">Journey</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-    <section id="skills" class="section">
-        <h2 class="section-title">Key Areas of Expertise</h2>
-        <div class="skills-container">
-            <div class="skill-tag">Python 🐍</div>
-            <div class="skill-tag">Generative AI</div>
-            <div class="skill-tag">LLM Development</div>
-            <div class="skill-tag">RAG Architecture</div>
-            <div class="skill-tag">Machine Learning</div>
-            <div class="skill-tag">Deep Learning</div>
-            <div class="skill-tag">AI Chatbot Dev</div>
-            <div class="skill-tag">FastAPI</div>
-            <div class="skill-tag">SQL</div>
-            <div class="skill-tag">Data Visualization</div>
-            <div class="skill-tag">External API Integration</div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2 class="section-title">Selected Projects</h2>
-        <div class="projects-grid">
-            
-            <div class="project-card">
-                <div class="card-image">
-                    <img src="images/kariyer-mentoru-ai-ss.png" alt="LLM Project" onerror="this.src='https://kariyer-mentoru-ai.streamlit.app/'">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-text-wrapper">
+                <span class="hero-label">Generative AI & LLM Developer</span>
+                <h1>Building intelligent <br> systems with Python.</h1>
+                <p class="hero-sub">
+                    Focusing on RAG Architectures, Agents, and Deep Learning. <br>
+                    Based in Antalya, Türkiye.
+                </p>
+                
+                <div class="social-minimal">
+                    <a href="https://github.com/BoraKol" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/borakol/" target="_blank">LinkedIn</a>
+                    <a href="https://huggingface.co/borakol" target="_blank">HuggingFace</a>
+                    <a href="https://www.kaggle.com/borakol1" target="_blank">Kaggle</a>
                 </div>
-                <div class="card-content">
-                    <h3>Kariyer Mentoru AI</h3>
-                    <div class="tech-stack">
-                        <span>LLM</span>
-                        <span>Streamlit</span>
-                        <span>Docker Compose</span>
-                        <span>FastAPI</span>
+            </div>
+        </section>
+
+        <!-- PROJELER (GALERİ TARZI) -->
+        <section id="projects" class="section-padding">
+            <div class="section-header">
+                <h2>Selected Work</h2>
+                <span class="count">(2)</span>
+            </div>
+
+            <div class="project-gallery">
+                
+                <!-- Proje 1: Kariyer Mentoru AI -->
+                <div class="gallery-item">
+                    <div class="img-container">
+                        <!-- Senin verdiğin resim yolu -->
+                        <img src="images/kariyer-mentoru-ai-ss.png" alt="Kariyer Mentoru AI" onerror="this.src='https://via.placeholder.com/800x600/1a1a1a/333333?text=Kariyer+Mentoru'">
+                        <div class="overlay">
+                            <a href="https://github.com/BoraKol/kariyer_mentoru_ai-ss.png" target="_blank" class="overlay-btn">Code</a>
+                            <a href="https://kariyer-mentoru-ai.streamlit.app" target="_blank" class="overlay-btn demo-btn">Demo</a>
+                        </div>
                     </div>
-                    <a href="https://github.com/BoraKol/kariyer_mentoru_ai-ss.png" target="_blank" class="btn-project">View Code <i class="fas fa-arrow-right"></i></a>
-                    <a href="https://kariyer-mentoru-ai.streamlit.app" target="_blank" class="btn-project btn-demo">
-                    View Demo <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="card-image">
-                    <img src="images/multilingual-tts-translator-ss.png" alt="LLM Project" onerror="this.src='https://multilingual-tts-translator.vercel.app/'">
-                </div>
-                <div class="card-content">
-                    <h3>Multilingual TTS Translator</h3>
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>Gemini API</span>
+                    <div class="meta">
+                        <h3>Kariyer Mentoru AI</h3>
+                        <p>LLM • Streamlit • Docker • FastAPI</p>
                     </div>
-                    <a href="https://github.com/BoraKol/multilingual-tts-translator" target="_blank" class="btn-project">View Code <i class="fas fa-arrow-right"></i></a>
-                     <a href="https://multilingual-tts-translator.vercel.app" target="_blank" class="btn-project btn-demo">
-                    View Demo <i class="fas fa-external-link-alt"></i>
-                    </a>
+                </div>
+
+                <!-- Proje 2: Multilingual TTS -->
+                <div class="gallery-item">
+                    <div class="img-container">
+                        <!-- Senin verdiğin resim yolu -->
+                        <img src="images/multilingual-tts-translator-ss.png" alt="Multilingual TTS" onerror="this.src='https://via.placeholder.com/800x600/1a1a1a/333333?text=TTS+Translator'">
+                        <div class="overlay">
+                            <a href="https://github.com/BoraKol/multilingual-tts-translator" target="_blank" class="overlay-btn">Code</a>
+                            <a href="https://multilingual-tts-translator.vercel.app" target="_blank" class="overlay-btn demo-btn">Demo</a>
+                        </div>
+                    </div>
+                    <div class="meta">
+                        <h3>Multilingual TTS Translator</h3>
+                        <p>Python • Gemini API • Vercel</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DENEYİM & BECERİLER (Minimal Liste Görünümü) -->
+        <section id="about" class="section-padding">
+            <div class="grid-layout">
+                <!-- Sol Kolon -->
+                <div class="left-col">
+                    <h2>Expertise & <br> Journey</h2>
+                </div>
+                
+                <!-- Sağ Kolon -->
+                <div class="right-col">
+                    
+                    <!-- Biyografi -->
+                    <div class="info-block">
+                        <h4>About</h4>
+                        <p>
+                            I am a recent Computer Engineering graduate with a strong passion for research and development in Artificial Intelligence. My goal is to contribute to innovative solutions by combining theoretical knowledge with practical experience.
+                        </p>
+                    </div>
+
+                    <!-- Deneyim Listesi (Timeline yerine Clean List) -->
+                    <div class="info-block">
+                        <h4>Experience</h4>
+                        <ul class="clean-list">
+                            <li>
+                                <span class="date">Oct 2025 - Pres.</span>
+                                <div class="details">
+                                    <strong>idnorm (Remote)</strong>
+                                    <p>ML Engineering Intern - Research on camera dead pixels & sensor pattern noise.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="date">Jul 2025 - Aug 2025</span>
+                                <div class="details">
+                                    <strong>Huawei (Remote)</strong>
+                                    <p>Huawei Cloud AI Bootcamp Participant.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="date">Feb 2025 - Mar 2025</span>
+                                <div class="details">
+                                    <strong>BTK Akademi</strong>
+                                    <p>LLM Application Dev. Bootcamp - RAG, Fine-Tuning & Agents.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="date">Dec 2024 - Jan 2025</span>
+                                <div class="details">
+                                    <strong>Pupilica</strong>
+                                    <p>AI Bootcamp Participant - ML & Deep Learning techniques.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="date">Aug 2023 - Sep 2023</span>
+                                <div class="details">
+                                    <strong>Softalya Software</strong>
+                                    <p>Web Development Intern - React.js & Redux.</p>
+                                </div>
+                            </li>
+                             <li>
+                                <span class="date">Aug 2022 - Sep 2022</span>
+                                <div class="details">
+                                    <strong>Süleyman Demirel Univ. IT</strong>
+                                    <p>Intern - C# ASP.NET MVC.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Eğitim -->
+                     <div class="info-block">
+                        <h4>Education</h4>
+                        <ul class="clean-list">
+                            <li>
+                                <span class="date">2019 - 2024</span>
+                                <div class="details">
+                                    <strong>Süleyman Demirel University</strong>
+                                    <p>Bachelor's Degree, Computer Engineering.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Yetenekler (Tags) -->
+                    <div class="info-block">
+                        <h4>Tech Stack</h4>
+                        <p class="tags">
+                            Python, Generative AI, RAG Architecture, LLM Development, Machine Learning, Deep Learning, FastAPI, SQL, Data Visualization, External API Integration.
+                        </p>
+                    </div>
+
+                     <!-- Sertifikalar -->
+                    <div class="info-block">
+                        <h4>Certifications</h4>
+                        <ul class="simple-list">
+                            <li>IBM: Data Visualization with Python (2024)</li>
+                            <li>IBM: Data Analysis with Python (2024)</li>
+                            <li>BTK: NLP Beginner Course (2025)</li>
+                            <li>BTK: Intro to LLMs (2025)</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <h2 class="section-title">Professional Experience & Education</h2>
-        <div class="timeline">
-            
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Oct 2025 – Present</div>
-                <div class="timeline-content">
-                    <h3>ML Engineering Intern</h3>
-                    <h4>idnorm (Remote)</h4>
-                    <p>Currently researching on the field of camera dead pixels detection and sensor pattern noise fingerprinting.</p>
-                </div>
+        <!-- FOOTER -->
+        <footer id="contact">
+            <div class="footer-content">
+                <p>Have an idea?</p>
+                <!-- Tıklanabilir Büyük Mail İkonu -->
+                <a href="mailto:borakol07@gmail.com" class="big-mail-btn" title="Send Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <p class="email-text">borakol07@gmail.com</p>
             </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">July 2025 - Aug 2025</div>
-                <div class="timeline-content">
-                    <h3>Huawei Cloud AI Bootcamp</h3>
-                    <h4>Huawei (Remote)</h4>
-                    <p>Explored and used Huawei Cloud Services not just in theory but through practical application.</p>
-                </div>
+            <div class="copyright">
+                &copy; 2025 Bora Kol.
             </div>
+        </footer>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Feb 2025 – Mar 2025</div>
-                <div class="timeline-content">
-                    <h3>LLM Application Dev. Bootcamp</h3>
-                    <h4>BTK Akademi (Antalya)</h4>
-                    <p>Practiced designing LLM-based applications using RAG, Fine-Tuning, and Agents beyond theoretical knowledge.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Dec 2024 - Jan 2025</div>
-                <div class="timeline-content">
-                    <h3>AI Bootcamp Participant</h3>
-                    <h4>Pupilica (Remote)</h4>
-                    <p>Learned both theoretical and applied techniques on Machine Learning and Deep Learning projects.</p>
-                </div>
-            </div>
-
-             <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">July 2024</div>
-                <div class="timeline-content">
-                    <h3>ML Bootcamp with Python</h3>
-                    <h4>BTK Akademi (Antalya)</h4>
-                    <p>Conducted R&D on Google Colab, Kaggle, and Hugging Face alongside advanced Python and Data Analysis training.</p>
-                </div>
-            </div>
-
-             <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Aug 2023 - Sep 2023</div>
-                <div class="timeline-content">
-                    <h3>Intern (Web Development)</h3>
-                    <h4>Softalya Software (Antalya)</h4>
-                    <p>Worked on web development using React.js and learned the ReactRedux (state management) structure.</p>
-                </div>
-            </div>
-
-             <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Aug 2022 - Sep 2022</div>
-                <div class="timeline-content">
-                    <h3>Intern</h3>
-                    <h4>Süleyman Demirel University IT Dept.</h4>
-                    <p>Implemented CRUD operations on a website using the C# ASP.NET MVC framework.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot" style="border-color: #fff;"></div>
-                <div class="timeline-date">2019 - 2024</div>
-                <div class="timeline-content">
-                    <h3>Computer Engineering (Bachelor's)</h3>
-                    <h4>Süleyman Demirel University</h4>
-                    <p>Graduated with a strong foundation in software engineering principles.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="certifications" class="section">
-        <h2 class="section-title">Certifications</h2>
-        <div class="skills-container">
-            <div class="skill-tag" style="background: rgba(255,255,255,0.02);">IBM: Data Visualization with Python (2024)</div>
-            <div class="skill-tag" style="background: rgba(255,255,255,0.02);">IBM: Data Analysis with Python (2024)</div>
-            <div class="skill-tag" style="background: rgba(255,255,255,0.02);">BTK: NLP Beginner Course (2025)</div>
-            <div class="skill-tag" style="background: rgba(255,255,255,0.02);">BTK: Intro to LLMs (2025)</div>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <h2>Let's Connect</h2>
-        <p>Open to innovative AI projects and collaborations.</p>
-        <a href="mailto:borakol07@gmail.com" class="mail-icon-btn" title="Bana Mail Gönder">
-        <i class="fas fa-envelope"></i>
-        </a>
-        <div class="footer-bottom">
-            &copy; 2025 Bora Kol.
-        </div>
-    </footer>
+    </div>
 
 </body>
 </html>
