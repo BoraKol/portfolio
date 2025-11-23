@@ -1,11 +1,11 @@
 :root {
-    --bg-color: #050505;       /* Tam Mat Siyah (Eski lacivert yerine) */
+    --bg-color: #050505;       /* Tam Mat Siyah */
     --text-main: #ffffff;      /* Tam Beyaz */
-    --text-muted: #888888;     /* Soluk Gri (İkincil metinler için) */
+    --text-muted: #888888;     /* Soluk Gri */
     --border-color: #222222;   /* Çok silik çizgiler */
-    --font-heading: 'Manrope', sans-serif; /* Başlıklar için modern font */
-    --font-body: 'Inter', sans-serif;      /* Metinler için okunaklı font */
-    --transition: all 0.6s cubic-bezier(0.2, 1, 0.3, 1); /* Çok yumuşak, "lüks" geçiş efekti */
+    --font-heading: 'Manrope', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --transition: all 0.6s cubic-bezier(0.2, 1, 0.3, 1); /* Lüks geçiş efekti */
 }
 
 * {
@@ -19,8 +19,8 @@ body {
     color: var(--text-main);
     font-family: var(--font-body);
     line-height: 1.6;
-    overflow-x: hidden; /* Yatay taşmayı engelle */
-    -webkit-font-smoothing: antialiased; /* Yazıları daha keskin gösterir */
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
@@ -36,9 +36,8 @@ a {
     cursor: pointer;
 }
 
-/* Tüm içeriği ortalayan ana kapsayıcı */
 .main-wrapper {
-    max-width: 1400px; /* Geniş ekranlarda içerik çok yayılmasın */
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -50,6 +49,9 @@ header {
     align-items: center;
     padding: 50px 0;
     font-family: var(--font-heading);
+    /* Header animasyonu için başlangıç */
+    opacity: 0;
+    animation: fadeInDown 1s cubic-bezier(0.2, 1, 0.3, 1) forwards;
 }
 
 .logo {
@@ -69,12 +71,12 @@ nav a:hover {
     color: var(--text-main);
 }
 
-/* 3. HERO BÖLÜMÜ (DEVASA TİPOGRAFİ) */
+/* 3. HERO BÖLÜMÜ */
 .hero {
     min-height: 75vh;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--border-color); /* Altına ince çizgi */
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: 80px;
 }
 
@@ -92,7 +94,7 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 5.5vw; /* Ekran genişliğine göre büyüyen devasa yazı */
+    font-size: 5.5vw;
     line-height: 1.1;
     letter-spacing: -2px;
     margin-bottom: 40px;
@@ -106,7 +108,6 @@ nav a:hover {
     margin-bottom: 50px;
 }
 
-/* Minimal Sosyal Medya Linkleri */
 .social-minimal {
     display: flex;
     gap: 30px;
@@ -124,7 +125,7 @@ nav a:hover {
     opacity: 0.7;
 }
 
-/* 4. PROJELER (GALERİ TARZI - ÖNEMLİ) */
+/* 4. PROJELER */
 .section-padding {
     padding: 100px 0;
     border-top: 1px solid var(--border-color);
@@ -148,10 +149,9 @@ nav a:hover {
     font-size: 1.2rem;
 }
 
-/* Izgara Yapısı */
 .project-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* İki sütunlu yapı */
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
     row-gap: 120px;
 }
@@ -161,10 +161,9 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* Resim Kapsayıcısı */
 .img-container {
     width: 100%;
-    aspect-ratio: 16/10; /* Modern geniş ekran oranı */
+    aspect-ratio: 16/10;
     background-color: #111;
     overflow: hidden;
     margin-bottom: 25px;
@@ -175,20 +174,17 @@ nav a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Siyah beyaz efekti ve geçiş ayarı */
     filter: grayscale(100%) contrast(1.1);
     transition: var(--transition);
     opacity: 0.8;
 }
 
-/* Hover Efekti: Resim renklenir ve hafif büyür */
 .gallery-item:hover img {
     filter: grayscale(0%) contrast(1);
     transform: scale(1.03);
     opacity: 1;
 }
 
-/* Resim üzerindeki butonlar (Varsayılan olarak gizli) */
 .overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -231,7 +227,6 @@ nav a:hover {
     transform: translateY(0);
 }
 
-/* Proje Altındaki Yazılar */
 .meta h3 {
     font-size: 1.8rem;
     margin-bottom: 8px;
@@ -240,18 +235,17 @@ nav a:hover {
 
 .meta p {
     color: var(--text-muted);
-    font-family: monospace; /* Teknik bir hava katar */
+    font-family: monospace;
     font-size: 0.9rem;
 }
 
-/* 5. DENEYİM VE HAKKIMDA (IZGARA DÜZENİ) */
+/* 5. DENEYİM VE HAKKIMDA */
 .grid-layout {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Sol taraf dar, sağ taraf geniş */
+    grid-template-columns: 1fr 2fr;
     gap: 60px;
 }
 
-/* Sol taraftaki yapışkan başlık */
 .left-col h2 {
     font-size: 3rem;
     line-height: 1.1;
@@ -281,17 +275,16 @@ nav a:hover {
     max-width: 90%;
 }
 
-/* Temiz Liste (Eski Timeline yerine) */
 .clean-list {
     list-style: none;
 }
 
 .clean-list li {
     display: grid;
-    grid-template-columns: 150px 1fr; /* Tarih solda, içerik sağda */
+    grid-template-columns: 150px 1fr;
     margin-bottom: 30px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #111; /* Çok silik ayırıcı */
+    border-bottom: 1px solid #111;
 }
 
 .clean-list li:last-child {
@@ -317,7 +310,6 @@ nav a:hover {
     margin: 0;
 }
 
-/* Basit Liste (Sertifikalar) */
 .simple-list {
     list-style: none;
     line-height: 2;
@@ -329,7 +321,7 @@ nav a:hover {
     line-height: 1.8;
 }
 
-/* 6. FOOTER & İLETİŞİM */
+/* 6. FOOTER */
 footer {
     padding: 100px 0;
     text-align: center;
@@ -342,7 +334,6 @@ footer p {
     margin-bottom: 30px;
 }
 
-/* Büyük Mail İkonu Efekti */
 .big-mail-btn {
     display: inline-block;
     font-size: 6rem;
@@ -351,9 +342,9 @@ footer p {
 }
 
 .big-mail-btn:hover {
-    transform: scale(1.2); /* Üzerine gelince belirgin büyüme */
+    transform: scale(1.2);
     color: #fff;
-    text-shadow: 0 0 30px rgba(255,255,255,0.3); /* Parlama efekti */
+    text-shadow: 0 0 30px rgba(255,255,255,0.3);
 }
 
 .email-text {
@@ -369,36 +360,52 @@ footer p {
     color: #333;
 }
 
-/* 7. MOBİL UYUMLULUK (RESPONSIVE) */
-@media (max-width: 768px) {
-    .main-wrapper {
-        padding: 0 20px;
-    }
+/* ========================================= */
+/* ===== ANIMASYONLAR (SCROLL REVEAL) ====== */
+/* ========================================= */
 
-    /* Mobilde fontları biraz küçült */
+/* Temel Reveal Sınıfı */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px); /* Aşağıdan başlar */
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1); /* Çok yumuşak geçiş */
+    will-change: opacity, transform;
+}
+
+/* Aktif olduğunda (JS ekler) */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Gecikmeli girişler için (Listeler vb.) */
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+/* Header Giriş Animasyonu */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBİL UYUMLULUK */
+@media (max-width: 768px) {
+    .main-wrapper { padding: 0 20px; }
     .hero h1 { font-size: 3rem; }
-    
-    /* Gridleri tek sütuna düşür */
     .project-gallery { 
         grid-template-columns: 1fr; 
         row-gap: 60px;
     }
-
-    .grid-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .left-col h2 {
-        position: static;
-        margin-bottom: 40px;
-    }
-
-    /* Listeleri alt alta al */
-    .clean-list li {
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
-
+    .grid-layout { grid-template-columns: 1fr; }
+    .left-col h2 { position: static; margin-bottom: 40px; }
+    .clean-list li { grid-template-columns: 1fr; gap: 5px; }
     .header { padding: 30px 0; }
-    nav { display: none; } /* Mobilde menüyü gizle */
+    nav { display: none; }
 }
