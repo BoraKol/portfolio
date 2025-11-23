@@ -288,3 +288,20 @@ footer {
     .nav-links { display: none; } /* Mobil menü için JS gerekir, şimdilik gizli */
     .section { padding: 60px 20px; }
 }
+
+.mail-icon-btn {
+    display: inline-block;
+    font-size: 4rem; /* İkonun büyüklüğü */
+    color: var(--text-muted); /* Başlangıç rengi (gri ton) */
+    margin: 20px 0 40px;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+/* Üzerine gelince (Hover) olacaklar */
+.mail-icon-btn:hover {
+    color: var(--secondary); /* Turkuaz rengine döner */
+    transform: translateY(-5px) scale(1.1); /* Hafifçe yukarı kalkar ve büyür */
+    filter: drop-shadow(0 0 15px rgba(0, 206, 201, 0.6)); /* Etrafına parlama (glow) efekti verir */
+    cursor: pointer;
+}
